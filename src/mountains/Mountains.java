@@ -11,11 +11,11 @@ public class Mountains {
     public static void main(String[] args) throws FileNotFoundException, IOException {
         
         File f = new File("C:\\Users\\Nebojsa\\Documents\\NetBeansProjects\\Mountains\\src\\mountains\\mountains.csv");
-        File f1 = new File("C:\\Users\\Nebojsa\\Documents\\NetBeansProjects\\Mountains\\src\\mountains\\mountains.properties");
+//        File f1 = new File("C:\\Users\\Nebojsa\\Documents\\NetBeansProjects\\Mountains\\src\\mountains\\mountains.properties");
         FileOutputStream fos = new FileOutputStream("C:\\Users\\Nebojsa\\Documents\\NetBeansProjects\\Mountains\\src\\mountains\\mountains.html");
         List<File> files = new ArrayList<>();
         files.add(f);
-        files.add(f1);
+//        files.add(f1);
         MountainAnalyser analyser = MountainAnalyser.getInstance();
         analyser.analyse(files, fos);
 
